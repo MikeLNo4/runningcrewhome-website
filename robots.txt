@@ -1,0 +1,14 @@
+# RunningCrewHome Website - robots.txt
+# Allow all crawlers to index all pages
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://mikelno4.github.io/runningcrewhome-website/sitemap.xml
+
+# Crawl-delay (optional, adjust if needed)
+# Crawl-delay: 1
+
+# Disallow specific paths if needed (currently none)
+# Disallow: /private/
