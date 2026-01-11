@@ -5,7 +5,7 @@
   <!-- English Homepage -->
   <url>
     <loc>https://mikelno4.github.io/runningcrewhome-website/index.html</loc>
-    <lastmod>2025-01-10</lastmod>
+    <lastmod>2026-01-11T12:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="de" href="https://mikelno4.github.io/runningcrewhome-website/index-de.html"/>
@@ -16,7 +16,7 @@
   <!-- German Homepage -->
   <url>
     <loc>https://mikelno4.github.io/runningcrewhome-website/index-de.html</loc>
-    <lastmod>2025-01-10</lastmod>
+    <lastmod>2026-01-11T12:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="de" href="https://mikelno4.github.io/runningcrewhome-website/index-de.html"/>
@@ -27,7 +27,7 @@
   <!-- English FAQ -->
   <url>
     <loc>https://mikelno4.github.io/runningcrewhome-website/faq.html</loc>
-    <lastmod>2025-01-10</lastmod>
+    <lastmod>2026-01-11T12:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="de" href="https://mikelno4.github.io/runningcrewhome-website/faq-de.html"/>
@@ -38,7 +38,7 @@
   <!-- German FAQ -->
   <url>
     <loc>https://mikelno4.github.io/runningcrewhome-website/faq-de.html</loc>
-    <lastmod>2025-01-10</lastmod>
+    <lastmod>2026-01-11T12:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="de" href="https://mikelno4.github.io/runningcrewhome-website/faq-de.html"/>
@@ -49,41 +49,45 @@
   <!-- English Privacy Policy -->
   <url>
     <loc>https://mikelno4.github.io/runningcrewhome-website/privacy.html</loc>
-    <lastmod>2025-01-10</lastmod>
+    <lastmod>2026-01-11T12:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="de" href="https://mikelno4.github.io/runningcrewhome-website/privacy-de.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mikelno4.github.io/runningcrewhome-website/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mikelno4.github.io/runningcrewhome-website/privacy.html"/>
   </url>
 
   <!-- German Privacy Policy -->
   <url>
     <loc>https://mikelno4.github.io/runningcrewhome-website/privacy-de.html</loc>
-    <lastmod>2025-01-10</lastmod>
+    <lastmod>2026-01-11T12:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="de" href="https://mikelno4.github.io/runningcrewhome-website/privacy-de.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mikelno4.github.io/runningcrewhome-website/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mikelno4.github.io/runningcrewhome-website/privacy.html"/>
   </url>
 
   <!-- English Terms of Service -->
   <url>
     <loc>https://mikelno4.github.io/runningcrewhome-website/terms.html</loc>
-    <lastmod>2025-01-10</lastmod>
+    <lastmod>2026-01-11T12:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="de" href="https://mikelno4.github.io/runningcrewhome-website/terms-de.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mikelno4.github.io/runningcrewhome-website/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mikelno4.github.io/runningcrewhome-website/terms.html"/>
   </url>
 
   <!-- German Terms of Service -->
   <url>
     <loc>https://mikelno4.github.io/runningcrewhome-website/terms-de.html</loc>
-    <lastmod>2025-01-10</lastmod>
+    <lastmod>2026-01-11T12:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="de" href="https://mikelno4.github.io/runningcrewhome-website/terms-de.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mikelno4.github.io/runningcrewhome-website/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mikelno4.github.io/runningcrewhome-website/terms.html"/>
   </url>
 
 </urlset>
