@@ -114,6 +114,30 @@ nav {
     box-shadow: var(--shadow-lg);
 }
 
+/* Hero Invite Images Grid */
+.hero-invites {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    align-items: center;
+}
+
+.invite-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: var(--shadow-lg);
+    transition: transform 0.3s;
+}
+
+.invite-image:hover {
+    transform: scale(1.05);
+}
+
+.invite-story {
+    grid-row: span 1;
+}
+
 /* Buttons */
 .btn {
     display: inline-block;
@@ -181,6 +205,39 @@ section {
 /* Features Section */
 .features {
     background: var(--bg-light);
+}
+
+/* Hero Feature (Run Invites) */
+.hero-feature {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 3rem;
+    margin-bottom: 3rem;
+    box-shadow: var(--shadow-lg);
+}
+
+.hero-feature-content {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.feature-icon-large {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.hero-feature h3 {
+    font-size: 2rem;
+    color: var(--primary-dark);
+    margin-bottom: 1rem;
+}
+
+.hero-feature p {
+    font-size: 1.125rem;
+    color: var(--text-light);
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
 }
 
 .features-grid {
@@ -481,6 +538,32 @@ footer {
 
     .hero-image {
         order: -1;
+    }
+
+    .hero-invites {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .invite-image {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .hero-feature {
+        padding: 2rem 1.5rem;
+    }
+
+    .feature-icon-large {
+        font-size: 3rem;
+    }
+
+    .hero-feature h3 {
+        font-size: 1.5rem;
+    }
+
+    .hero-feature p {
+        font-size: 1rem;
     }
 
     .nav-links {
