@@ -1,0 +1,520 @@
+/**
+ * RunningCrewHome - Invite Page Styles
+ *
+ * Mobile-first design optimized for social media traffic
+ * Uses the same color palette as the main website
+ */
+
+/* ==========================================
+   INVITE PAGE LAYOUT
+   ========================================== */
+
+.invite-page {
+    min-height: calc(100vh - 180px);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2rem 1rem 6rem;
+    background: linear-gradient(135deg, var(--bg-light) 0%, #e8ecf1 100%);
+}
+
+.invite-page .container {
+    max-width: 500px;
+    width: 100%;
+}
+
+/* ==========================================
+   LOADING STATE
+   ========================================== */
+
+.invite-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid var(--bg-light);
+    border-top-color: var(--accent-orange);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.invite-loading p {
+    color: var(--text-light);
+    font-size: 1rem;
+}
+
+/* ==========================================
+   ERROR STATE
+   ========================================== */
+
+.invite-error {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: var(--white);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+
+.error-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.invite-error h2 {
+    color: var(--primary-dark);
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.invite-error p {
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+/* ==========================================
+   INVITE CARD
+   ========================================== */
+
+.invite-card {
+    background: var(--white);
+    border-radius: 24px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    animation: slideUp 0.5s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==========================================
+   INVITE HEADER (Crew Info)
+   ========================================== */
+
+.invite-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-light) 100%);
+    color: var(--white);
+}
+
+.crew-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    flex-shrink: 0;
+}
+
+.crew-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.crew-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.invite-label {
+    font-size: 0.875rem;
+    opacity: 0.85;
+    margin-top: 0.25rem;
+}
+
+/* ==========================================
+   INVITE TITLE & DESCRIPTION
+   ========================================== */
+
+.invite-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--primary-dark);
+    padding: 1.5rem 1.5rem 0;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.invite-description {
+    padding: 0.75rem 1.5rem 0;
+    color: var(--text-light);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* ==========================================
+   INVITE DETAILS
+   ========================================== */
+
+.invite-details {
+    padding: 1rem 1.5rem;
+}
+
+.detail-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0.875rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+.detail-icon {
+    font-size: 1.5rem;
+    width: 2rem;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.detail-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.detail-label {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.25rem;
+}
+
+.detail-value {
+    font-size: 1.0625rem;
+    color: var(--text-dark);
+    font-weight: 500;
+    word-break: break-word;
+}
+
+.detail-subtext {
+    display: block;
+    font-size: 0.875rem;
+    color: var(--text-light);
+    font-weight: 400;
+    margin-top: 0.25rem;
+}
+
+/* ==========================================
+   INVITE STATUS BADGES
+   ========================================== */
+
+.invite-status {
+    margin: 0 1.5rem 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.9375rem;
+}
+
+.status-expired {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.status-cancelled {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* ==========================================
+   CTA SECTION
+   ========================================== */
+
+.invite-cta {
+    padding: 1.5rem;
+    background: var(--bg-light);
+    text-align: center;
+}
+
+.cta-text {
+    color: var(--text-light);
+    font-size: 0.9375rem;
+    margin-bottom: 1rem;
+}
+
+.btn-large {
+    padding: 1rem 2rem;
+    font-size: 1.0625rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 300px;
+}
+
+.app-icon {
+    font-size: 1.25rem;
+}
+
+/* ==========================================
+   CREATOR INFO
+   ========================================== */
+
+.creator-info {
+    padding: 1rem 1.5rem;
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--text-light);
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.creator-info strong {
+    color: var(--primary-dark);
+    font-weight: 600;
+}
+
+/* ==========================================
+   APP DOWNLOAD BANNER (Fixed Bottom)
+   ========================================== */
+
+.app-download-banner {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    padding: 0.75rem 1rem;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.banner-content {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.banner-icon {
+    font-size: 1.75rem;
+}
+
+.banner-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.banner-text strong {
+    display: block;
+    font-size: 0.9375rem;
+    color: var(--text-dark);
+}
+
+.banner-text span {
+    font-size: 0.8125rem;
+    color: var(--text-light);
+}
+
+.banner-btn {
+    background: var(--accent-orange);
+    color: var(--white);
+    padding: 0.625rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.875rem;
+    white-space: nowrap;
+}
+
+.banner-btn:hover {
+    background: #e67a2e;
+}
+
+/* Show banner only on mobile */
+@media (max-width: 768px) {
+    .app-download-banner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .invite-page {
+        padding-bottom: 8rem;
+    }
+}
+
+/* ==========================================
+   FOOTER (Simplified for invite page)
+   ========================================== */
+
+.invite-footer {
+    background: var(--primary-dark);
+    color: var(--white);
+    padding: 1.5rem 0;
+}
+
+.invite-footer .footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    border-top: none;
+    padding-top: 0;
+}
+
+.invite-footer p {
+    margin: 0;
+    font-size: 0.875rem;
+    opacity: 0.7;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 0.875rem;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+}
+
+/* ==========================================
+   RESPONSIVE ADJUSTMENTS
+   ========================================== */
+
+@media (max-width: 480px) {
+    .invite-page {
+        padding: 1rem 0.75rem 8rem;
+    }
+
+    .invite-card {
+        border-radius: 20px;
+    }
+
+    .invite-header {
+        padding: 1.25rem;
+    }
+
+    .crew-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .crew-name {
+        font-size: 1.125rem;
+    }
+
+    .invite-title {
+        font-size: 1.625rem;
+        padding: 1.25rem 1.25rem 0;
+    }
+
+    .invite-description {
+        padding: 0.5rem 1.25rem 0;
+        font-size: 0.9375rem;
+    }
+
+    .invite-details {
+        padding: 0.75rem 1.25rem;
+    }
+
+    .detail-row {
+        padding: 0.75rem 0;
+    }
+
+    .detail-icon {
+        font-size: 1.25rem;
+    }
+
+    .detail-value {
+        font-size: 1rem;
+    }
+
+    .invite-cta {
+        padding: 1.25rem;
+    }
+
+    .btn-large {
+        padding: 0.875rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .invite-footer .footer-bottom {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+}
+
+/* Large screens - center card more prominently */
+@media (min-width: 769px) {
+    .invite-page {
+        padding: 3rem 1rem;
+        align-items: center;
+        min-height: calc(100vh - 140px);
+    }
+
+    .invite-card {
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    }
+}
+
+/* ==========================================
+   DARK MODE SUPPORT (optional)
+   ========================================== */
+
+@media (prefers-color-scheme: dark) {
+    /* Note: Not implementing dark mode for initial launch
+       to keep design consistent with iOS app */
+}
+
+/* ==========================================
+   PRINT STYLES
+   ========================================== */
+
+@media print {
+    .app-download-banner,
+    .invite-cta,
+    header,
+    .invite-footer {
+        display: none !important;
+    }
+
+    .invite-page {
+        padding: 0;
+        background: white;
+    }
+
+    .invite-card {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+}
